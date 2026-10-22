@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STTI NIIT I-Tech | Portal Akademik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="portal">
+
+    <!-- ===== HEADER / NAVIGASI ===== -->
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="#beranda" aria-label="STTI NIIT I-Tech">
+          <span class="brand-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+          <span>STTI NIIT I-Tech</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#beranda" class="active">Beranda</a>
+          <a href="#tentang">Profil</a>
+          <a href="#program">Program Studi</a>
+          <a href="#informasi">Informasi</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ===== HERO ===== -->
+      <section class="hero" id="beranda">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Selamat Datang di<br>STTI NIIT I-Tech</h1>
+            <p>Membangun masa depan dengan teknologi dan pendidikan berkualitas.</p>
+            <a class="cta" href="#program">
+              Jelajahi Program Studi <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== KONTEN UTAMA ===== -->
+      <section class="content">
+        <div class="container">
+
+          <!-- Grid kartu: tentang kami + 2 kartu fitur -->
+          <div class="intro-grid" id="tentang">
+            <article class="about">
+              <h2 class="section-title">Tentang Kami</h2>
+              <p>STTI NIIT I-Tech adalah perguruan tinggi yang berfokus pada pengembangan teknologi informasi dan komunikasi. Kami berkomitmen untuk menghasilkan lulusan yang kompeten dan siap bersaing di dunia kerja.</p>
+              <p>Dengan kurikulum yang relevan dan didukung oleh dosen profesional, kami berkomitmen untuk memberikan pendidikan terbaik bagi setiap mahasiswa.</p>
+              <p>Bergabunglah bersama kami dan jadilah bagian dari generasi inovatif yang siap menghadapi tantangan masa depan.</p>
+            </article>
+
+            <article class="feature-card blue" id="program">
+              <div class="feature-icon"><i class="fa-solid fa-laptop"></i></div>
+              <h3>Program Studi Unggulan</h3>
+              <p>Kami menawarkan program studi yang relevan dengan kebutuhan industri. Sistem Informasi, Teknik Informatika, dan bidang teknologi lainnya.</p>
+              <button class="outline-btn" onclick="showInfo('Program studi tersedia: Sistem Informasi dan Teknik Informatika.')">
+                Lihat Program Studi <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </article>
+
+            <article class="feature-card mint">
+              <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
+              <h3>Fasilitas Lengkap</h3>
+              <p>Didukung oleh laboratorium modern, akses internet cepat, dan lingkungan belajar yang nyaman untuk mendukung proses pembelajaran.</p>
+              <button class="outline-btn" onclick="showInfo('Fasilitas kami mencakup laboratorium komputer, perpustakaan, dan ruang belajar modern.')">
+                Lihat Fasilitas <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </article>
+          </div>
+
+        </div>
+
+        <!-- Bagian akademik: tabel + form -->
+        <section class="academic-section" id="informasi">
+          <div class="container academic-grid">
+
+            <article class="panel">
+              <div class="panel-heading">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                  <h2>Data Mahasiswa dan Nilai Akademik</h2>
+                  <p>Berikut adalah data mahasiswa program studi Sistem Informasi.</p>
+                </div>
+              </div>
+
+              <div class="table-wrap" tabindex="0">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>NIM</th>
+                      <th>Nama Mahasiswa</th>
+                      <th>Program Studi</th>
+                      <th>Nilai Akhir</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>1</td><td>422510159</td><td><strong>Muhammad Zikri Saktiawan</strong></td><td>Teknik Informatika</td><td>85</td></tr>
+                    <tr><td>2</td><td>2024002</td><td>Siti Rahma</td><td>Sistem Informasi</td><td>92</td></tr>
+                    <tr><td>3</td><td>2024003</td><td>Budi Santoso</td><td>Teknik Informatika</td><td>78</td></tr>
+                    <tr><td>4</td><td>2024004</td><td>Dina Putri</td><td>Sistem Informasi</td><td>88</td></tr>
+                    <tr><td>5</td><td>2024005</td><td>Ricky Maulana</td><td>Teknik Informatika</td><td>90</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <span class="table-hint">Geser tabel ke samping untuk melihat semua kolom.</span>
+            </article>
+
+            <article class="panel">
+              <div class="panel-heading">
+                <i class="fa-solid fa-user"></i>
+                <div>
+                  <h2>Formulir Pendaftaran Mahasiswa</h2>
+                  <p>Isi data di bawah untuk melakukan pendaftaran.</p>
+                </div>
+              </div>
+
+              <form id="registrationForm">
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="nama">Nama Lengkap *</label>
+                    <input id="nama" required placeholder="Masukkan nama lengkap">
+                  </div>
+                  <div class="field">
+                    <label for="nim">NIM *</label>
+                    <input id="nim" required inputmode="numeric" placeholder="Masukkan NIM">
+                  </div>
+                  <div class="field">
+                    <label for="prodi">Program Studi *</label>
+                    <select id="prodi" required>
+                      <option value="">-- Pilih Program Studi --</option>
+                      <option>Teknik Informatika</option>
+                      <option>Sistem Informasi</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="email">Email *</label>
+                    <input id="email" required type="email" placeholder="Masukkan email">
+                  </div>
+                  <div class="field full">
+                    <label for="pesan">Pesan / Keterangan</label>
+                    <textarea id="pesan" placeholder="Tulis pesan atau keterangan tambahan..."></textarea>
+                  </div>
+                </div>
+
+                <button class="submit" type="submit">
+                  <i class="fa-solid fa-paper-plane"></i> Kirim Pendaftaran
+                </button>
+                <div class="form-message" id="formMessage">Pendaftaran berhasil dikirim. Terima kasih!</div>
+              </form>
+            </article>
+
+          </div>
+        </section>
+      </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="kontak">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <i class="fa-solid fa-graduation-cap"></i> STTI NIIT I-Tech
+          </div>
+          <div class="address">
+            <i class="fa-solid fa-location-dot"></i> Jl. Raya Salemba No. 123, Jakarta Pusat
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="socials">
+            <a href="#kontak" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#kontak" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#kontak" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#kontak" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <span class="copy">© 2024 STTI NIIT I-Tech. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+      toggle.innerHTML = open
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', function () {
+        document.querySelectorAll('.nav-links a').forEach(item => item.classList.remove('active'));
+        this.classList.add('active');
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      });
+    });
+
+    document.getElementById('registrationForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const nim = document.getElementById('nim');
+      if (!/^[0-9]{5,}$/.test(nim.value.trim())) {
+        nim.focus();
+        nim.style.borderColor = '#df4055';
+        return;
+      }
+      nim.style.borderColor = '';
+      document.getElementById('formMessage').classList.add('show');
+      this.reset();
+      setTimeout(() => document.getElementById('formMessage').classList.remove('show'), 4500);
+    });
+
+    function showInfo(message) {
+      alert(message);
+    }
+  </script>
+</body>
+</html>
